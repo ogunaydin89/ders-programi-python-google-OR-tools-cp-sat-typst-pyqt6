@@ -324,7 +324,7 @@ Based on the Progmatic 2.1 manual. Each rule has a level: **Off / Preference / M
 
 Additional rules (from FET's constraint set; same Off / Preference / Mandatory levels):
 
-- **R9** Teacher minimum hours on a working day: if a teacher comes in, they teach at least N hours (avoids 1-hour days). **Default: Mandatory, N = 2** (one-lesson days must not exist). Teachers whose whole weekly load is below N are exempt automatically, so the rule never makes a timetable impossible by itself.
+- **R9** Teacher minimum hours on a working day: if a teacher comes in, they teach at least N hours (avoids 1-hour days). **Default: Mandatory, N = 2** (one-lesson days must not exist). Exempt automatically, because for them the rule can never be met: teachers whose whole weekly load is below N, and teachers with a single lesson whose format has a block shorter than N (e.g. only one 3-hour lesson as 2+1).
 - **R10** Teacher maximum span per day: from their first to their last lesson, at most N periods. **Default: Off.**
 - **R11** Preferred or forbidden periods for a lesson or a subject (e.g. BES not in period 1). **Default: Off** (set per lesson).
 - **R12** Blocks do not straddle the lunch break. **Default: Preference.**

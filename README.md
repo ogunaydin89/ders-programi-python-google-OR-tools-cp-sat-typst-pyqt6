@@ -17,9 +17,9 @@ Work in progress. Milestones (see PLAN.md, section 11):
 
 - [x] M0: solver test run on a real school (anonymised benchmark)
 - [x] M1: data model, curriculum files, validation, save/load
-- [ ] M2: solver core
-- [ ] M3: all rules (R1–R12), minimal-change re-solve
-- [ ] M4: "why no solution" explanations, quality report
+- [x] M2: solver core
+- [x] M3: all rules (R1–R12), minimal-change re-solve
+- [x] M4: "why no solution" explanations, quality report
 - [ ] M5: PDF output
 - [ ] M6: desktop application
 - [ ] M7: polish
