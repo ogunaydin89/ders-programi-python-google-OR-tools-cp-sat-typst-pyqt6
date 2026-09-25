@@ -96,6 +96,8 @@ class TeachersPage(QWidget):
             return
         name = self.name.text().strip() or t.name
         short = self.short.text().strip() or teacher_short(name)
+        if name != t.name and t.short.startswith("Ö.") and normalise(short) == normalise(t.short):
+            short = teacher_short(name)            # still the placeholder: suggest N.SUR from the new name
         others = [(x.id, x.short) for x in self.state.project.teachers if x.id != t.id]
         if duplicates(others + [(t.id, short)]):
             warn(self, f"'{short}' kısaltması başka bir öğretmende kullanılıyor. Farklı bir kısaltma girin.")

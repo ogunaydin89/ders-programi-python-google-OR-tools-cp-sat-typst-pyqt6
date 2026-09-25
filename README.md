@@ -22,7 +22,7 @@ Work in progress. Milestones (see PLAN.md, section 11):
 - [x] M4: "why no solution" explanations, quality report
 - [x] M5: PDF output
 - [x] M6: desktop application
-- [ ] M7: polish
+- [x] M7: polish (see PLAN.md section 14 for known gaps)
 
 ## Install (Windows 11, Linux, macOS)
 
@@ -54,6 +54,23 @@ Windows: `.venv\Scripts\python -m dersprogrami`  ·  Linux / macOS: `.venv/bin/p
 
 Command line (optional): `python -m dersprogrami solve okul.json --time 180`, `python -m dersprogrami check okul.json`,
 `python -m dersprogrami pdf okul.json cikti_klasoru`.
+
+### Check a new installation
+
+`.venv\Scripts\python tools\selfcheck.py` (Windows) or `.venv/bin/python tools/selfcheck.py` (Linux / macOS) checks the
+libraries, solves the benchmark school, verifies the result and writes the PDFs. It takes about a minute and ends with
+*"her şey çalışıyor."* when everything works.
+
+## Kısa kullanım (Türkçe)
+
+1. **Okul:** okul adını ve okul türlerini sınıf aralıklarıyla girin (karma okullarda birden fazla satır).
+2. **Öğretmenler:** öğretmenleri ekleyin; kısaltma otomatik önerilir. Kapalı gün ve saatleri tabloya tıklayarak işaretleyin.
+3. **Sınıflar:** "Sınıf ekle" ile sınıfları oluşturun; günlük ders sayılarını onaylayın, seçmeli dersleri seçin.
+4. **Ders Atama:** tabloda her derse öğretmen seçin; sağda öğretmen yükleri anında güncellenir.
+5. **Kurallar:** kuralları Kapalı / Tercih / Zorunlu olarak ayarlayın.
+6. **Çöz:** programı oluşturun. Program kurulamıyorsa nedeni Türkçe açıklanır.
+7. **Program:** sınıf görünümünde bir derse, sonra yeşil bir hücreye tıklayarak elle düzeltin; dersleri kilitleyin.
+8. **Yazdır:** çarşaf, öğretmen, sınıf ve A5 tebliğ-tebellüğ çıktılarını PDF olarak kaydedin.
 
 **Windows note:** use `git clone` as shown. A ZIP downloaded from the website carries Windows' "downloaded from the internet" mark, and SmartScreen may then block its scripts; if you do use the ZIP, right-click it → Properties → *Unblock* before extracting.
 

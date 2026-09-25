@@ -157,6 +157,14 @@ class ModelBuilder:
                 for q in range(1, classes[cid].daily_hours[d - 1] + 1):
                     m.AddExactlyOne([v for lid in lids for v in self.occ[(lid, d, q)]])
 
+        # Redundant: each class day's blocks add up to its length (helps the solver find timetables faster).
+        lesson_class = {l.id: l.class_id for l in p.lessons}
+        day_terms = collections.defaultdict(list)
+        for key, v in self.x.items():
+            day_terms[(lesson_class[key[0]], key[3])].append(self.block_size[key] * v)
+        for (cid, d), terms in day_terms.items():
+            m.Add(sum(terms) == classes[cid].daily_hours[d - 1])
+
         # S7 locks, and minimal-change preference for unlocked previous placements.
         for pl in self.p.placements:
             if pl.locked:
@@ -411,6 +419,7 @@ def solve(project: Project, options: SolveOptions | None = None) -> SolveResult:
     solver.parameters.max_time_in_seconds = o.time_limit
     solver.parameters.num_workers = o.workers or os.cpu_count() or 8
     solver.parameters.random_seed = o.seed
+    solver.parameters.linearization_level = 2      # measured: much faster first timetables on tight schools
     t0 = time.time()
     cb = _Callback(b, o, t0)
     stopped = threading.Event()

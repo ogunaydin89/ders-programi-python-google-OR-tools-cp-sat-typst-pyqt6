@@ -2,7 +2,7 @@
 
 A desktop school timetabler for Turkish middle and high schools (grades 5–12), meant to replace Alfabe Progmatic: same lesson-distribution power, plus a plain-Turkish explanation whenever no timetable is possible.
 
-Status: **planning only — no code yet.** Every decision marked *locked* below was made by the user; do not change it without asking.
+Status: **M0–M7 built** (see section 14 for build notes and known gaps). Every decision marked *locked* below was made by the user; do not change it without asking.
 
 ---
 
@@ -415,14 +415,14 @@ Virtualenvs, caches and generated PDFs stay out of version control.
 
 ## 11. Milestones
 
-0. **M0 Solver test run:** a throwaway prototype (`spike/`) solves the benchmark (S1–S7 plus the default Preference rules) in both variants, checks the result with an independent checker and compares it with Progmatic's baseline.
-1. **M1 Data:** data model, school setup, the four curriculum files (text extracted from the PDFs in `sources/` by script, then every grade's totals checked automatically against the official totals), electives and choice lessons, custom lessons, validation, JSON save/load.
-2. **M2 Solver core:** S1–S7 on the benchmark, run from the command line.
-3. **M3 Rules:** R1–R12 with Off/Preference/Mandatory; minimal-change re-solve.
-4. **M4 Explanations:** pre-checks, minimal conflict sets, quality report, solve controls.
-5. **M5 PDFs:** master (çarşaf), teacher, class and A5 handout templates.
-6. **M6 PyQt6 UI:** including guided manual editing, undo/redo, autosave and backups.
-7. **M7 Polish:** README with exact install and run steps for Windows 11 (primary), Linux and macOS; then consider Codeberg.
+0. ✔ **M0 Solver test run:** a throwaway prototype (`spike/`) solves the benchmark (S1–S7 plus the default Preference rules) in both variants, checks the result with an independent checker and compares it with Progmatic's baseline.
+1. ✔ **M1 Data:** data model, school setup, the four curriculum files (text extracted from the PDFs in `sources/` by script, then every grade's totals checked automatically against the official totals), electives and choice lessons, custom lessons, validation, JSON save/load.
+2. ✔ **M2 Solver core:** S1–S7 on the benchmark, run from the command line.
+3. ✔ **M3 Rules:** R1–R12 with Off/Preference/Mandatory; minimal-change re-solve.
+4. ✔ **M4 Explanations:** pre-checks, minimal conflict sets, quality report, solve controls.
+5. ✔ **M5 PDFs:** master (çarşaf), teacher, class and A5 handout templates.
+6. ✔ **M6 PyQt6 UI:** including guided manual editing, undo/redo, autosave and backups.
+7. ✔ **M7 Polish:** README with exact install and run steps for Windows 11 (primary), Linux and macOS; then consider Codeberg.
 
 ## 12. Reliability
 
@@ -440,3 +440,19 @@ No plan guarantees bug-free software; these rules make sure bugs cannot lose dat
 - README note for Windows: a ZIP downloaded from Codeberg carries the "downloaded from the internet" mark and SmartScreen may block its scripts; use `git clone`, or Properties → Unblock before extracting.
 - Class timetable printout of the benchmark school, for cross-checking the transcription.
 - Licence note: PyQt6 is GPL, so a shared app must be GPL; PySide6 (LGPL) has a near-identical API if that ever matters.
+
+## 14. Build notes and known gaps
+
+**Decisions made while building** (within the plan, recorded for review):
+- PDFs use Typst's built-in Libertinus Serif font with system fonts ignored, so printouts are identical on every OS and nothing extra has to be installed.
+- R9 exemption: besides teachers with less than N weekly hours, a teacher whose only lesson has a block shorter than N (e.g. a single 3-hour lesson as 2+1) is exempt, because for them the rule can never be met.
+- Adding a school type on the Okul page raises the daily maximum to what that type needs (İHO and lise: 8); the add-class dialog warns if a default day still does not fit.
+- Solver speed: redundant "class day total" constraints and CP-SAT linearization level 2. On the benchmark the first valid timetable now comes after 5–18 s in 10 of 10 runs (before: 9–55 s, sometimes none within 60 s).
+- Manual editing is click-based (select a lesson, then a green cell); a lesson can move to free cells or swap with a lesson of the same length. Locked lessons never move.
+
+**Known gaps** (planned but not built yet):
+- Per-teacher rule overrides (e.g. a different daily maximum for one teacher); rule values are school-wide.
+- Side-by-side comparison of alternative timetables in the UI (the solver already keeps the last improving solutions).
+- Class day lengths are not yet among the switches the explanation can blame (closed hours, formats, locks and Mandatory rules are).
+- Windows 11: not yet run on a real Windows machine; use `tools/selfcheck.py` on the school PC.
+

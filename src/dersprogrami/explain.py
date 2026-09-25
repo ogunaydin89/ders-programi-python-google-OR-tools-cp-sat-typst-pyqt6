@@ -123,6 +123,7 @@ def _solve(b: ModelBuilder, keys, budget, workers=8):
     s = cp_model.CpSolver()
     s.parameters.max_time_in_seconds = max(1.0, budget)
     s.parameters.num_workers = workers
+    s.parameters.linearization_level = 2
     return s, s.Solve(b.m)
 
 
