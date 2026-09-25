@@ -21,7 +21,7 @@ Work in progress. Milestones (see PLAN.md, section 11):
 - [x] M3: all rules (R1–R12), minimal-change re-solve
 - [x] M4: "why no solution" explanations, quality report
 - [x] M5: PDF output
-- [ ] M6: desktop application
+- [x] M6: desktop application
 - [ ] M7: polish
 
 ## Install (Windows 11, Linux, macOS)
@@ -47,6 +47,13 @@ Linux / macOS:
 .venv/bin/pip install -r requirements-dev.txt
 .venv/bin/python -m pytest
 ```
+
+### Start the application
+
+Windows: `.venv\Scripts\python -m dersprogrami`  ·  Linux / macOS: `.venv/bin/python -m dersprogrami`
+
+Command line (optional): `python -m dersprogrami solve okul.json --time 180`, `python -m dersprogrami check okul.json`,
+`python -m dersprogrami pdf okul.json cikti_klasoru`.
 
 **Windows note:** use `git clone` as shown. A ZIP downloaded from the website carries Windows' "downloaded from the internet" mark, and SmartScreen may then block its scripts; if you do use the ZIP, right-click it → Properties → *Unblock* before extracting.
 
