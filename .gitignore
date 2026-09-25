@@ -1,0 +1,12 @@
+# Dependencies and caches never go to the repository
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated output and user data (project files contain real names)
+out/
+*.pdf
+!sources/*.pdf
+*_yedekler/
+*.log

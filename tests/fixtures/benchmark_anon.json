@@ -1,0 +1,3767 @@
+{
+ "description": "Anonymised benchmark: a real Turkish middle school (ortaokul, 2025-2026). Teachers are T01-T17 (row order of the school's Progmatic master printout). Days 1-5 = Mon-Fri, periods 1-7.",
+ "source": "Live school pano (Progmatic result), extracted 2026-09-25; restrictions confirmed by the headmaster.",
+ "school": {
+  "curriculum": "ortaokul",
+  "days": 5,
+  "periods": 7,
+  "bell": [
+   [
+    "08:30",
+    "09:10"
+   ],
+   [
+    "09:25",
+    "10:05"
+   ],
+   [
+    "10:25",
+    "11:05"
+   ],
+   [
+    "11:20",
+    "12:00"
+   ],
+   [
+    "12:50",
+    "13:30"
+   ],
+   [
+    "13:45",
+    "14:25"
+   ],
+   [
+    "14:40",
+    "15:20"
+   ]
+  ],
+  "lunch_after_period": 4
+ },
+ "classes": [
+  {
+   "id": "5-A",
+   "grade": 5,
+   "section": "A",
+   "daily_hours": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "id": "5-B",
+   "grade": 5,
+   "section": "B",
+   "daily_hours": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "id": "6-A",
+   "grade": 6,
+   "section": "A",
+   "daily_hours": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "id": "6-B",
+   "grade": 6,
+   "section": "B",
+   "daily_hours": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "id": "7-A",
+   "grade": 7,
+   "section": "A",
+   "daily_hours": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "id": "7-B",
+   "grade": 7,
+   "section": "B",
+   "daily_hours": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "id": "8-A",
+   "grade": 8,
+   "section": "A",
+   "daily_hours": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  },
+  {
+   "id": "8-B",
+   "grade": 8,
+   "section": "B",
+   "daily_hours": [
+    7,
+    7,
+    7,
+    7,
+    7
+   ]
+  }
+ ],
+ "teachers": [
+  {
+   "id": "T01",
+   "main_subject_in_timetable": "OKUMA BECERİLERİ",
+   "weekly_hours": 20,
+   "closed": [
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T02",
+   "main_subject_in_timetable": "TÜRKÇE 5-6",
+   "weekly_hours": 22,
+   "closed": [
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T03",
+   "main_subject_in_timetable": "TÜRKÇE 7-8",
+   "weekly_hours": 21,
+   "closed": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ]
+   ]
+  },
+  {
+   "id": "T04",
+   "main_subject_in_timetable": "MATEMATİK",
+   "weekly_hours": 20,
+   "closed": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T05",
+   "main_subject_in_timetable": "MATEMATİK",
+   "weekly_hours": 21,
+   "closed": [
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T06",
+   "main_subject_in_timetable": "FEN BİLİMLERİ",
+   "weekly_hours": 21,
+   "closed": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "T07",
+   "main_subject_in_timetable": "FEN BİLİMLERİ",
+   "weekly_hours": 21,
+   "closed": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T08",
+   "main_subject_in_timetable": "SOSYAL BİLGİLER",
+   "weekly_hours": 25,
+   "closed": [
+    [
+     1,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T09",
+   "main_subject_in_timetable": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "weekly_hours": 21,
+   "closed": [
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T10",
+   "main_subject_in_timetable": "MÜZİK",
+   "weekly_hours": 19,
+   "closed": [
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T11",
+   "main_subject_in_timetable": "BEDEN EĞİTİMİ VE SPOR",
+   "weekly_hours": 16,
+   "closed": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ]
+   ]
+  },
+  {
+   "id": "T12",
+   "main_subject_in_timetable": "BİLİŞİM TEKNOLOJİLERİ VE YAZ.",
+   "weekly_hours": 8,
+   "closed": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T13",
+   "main_subject_in_timetable": "İNGİLİZCE 7-8",
+   "weekly_hours": 22,
+   "closed": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ]
+   ]
+  },
+  {
+   "id": "T14",
+   "main_subject_in_timetable": "AHLAK VE VATANDAŞLIK 5-6-7",
+   "weekly_hours": 6,
+   "closed": []
+  },
+  {
+   "id": "T15",
+   "main_subject_in_timetable": "İNGİLİZCE 5-6",
+   "weekly_hours": 6,
+   "closed": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "id": "T16",
+   "main_subject_in_timetable": "TEKNOLOJİ VE TASARIM",
+   "weekly_hours": 2,
+   "closed": []
+  },
+  {
+   "id": "T17",
+   "main_subject_in_timetable": "TEKNOLOJİ VE TASARIM",
+   "weekly_hours": 9,
+   "closed": [
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  }
+ ],
+ "variants": {
+  "strict": "Real wishes as listed in 'closed'.",
+  "progmatic": {
+   "note": "Progmatic found no timetable with the strict wishes; the headmaster opened this slot.",
+   "open": {
+    "T10": [
+     [
+      2,
+      5
+     ]
+    ]
+   }
+  }
+ },
+ "lessons": [
+  {
+   "id": "L001",
+   "class": "5-A",
+   "subject": "AHLAK VE VATANDAŞLIK 5-6-7",
+   "elective": true,
+   "teacher": "T14",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L002",
+   "class": "5-A",
+   "subject": "BEDEN EĞİTİMİ VE SPOR",
+   "elective": false,
+   "teacher": "T11",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L003",
+   "class": "5-A",
+   "subject": "BİLİŞİM TEKNOLOJİLERİ VE YAZ.",
+   "elective": false,
+   "teacher": "T12",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L004",
+   "class": "5-A",
+   "subject": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L005",
+   "class": "5-A",
+   "subject": "FEN BİLİMLERİ",
+   "elective": false,
+   "teacher": "T06",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L006",
+   "class": "5-A",
+   "subject": "GÖRSEL SANATLAR",
+   "elective": false,
+   "teacher": "T17",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L007",
+   "class": "5-A",
+   "subject": "MATEMATİK",
+   "elective": false,
+   "teacher": "T05",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L008",
+   "class": "5-A",
+   "subject": "MÜZİK",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L009",
+   "class": "5-A",
+   "subject": "OKUMA BECERİLERİ",
+   "elective": true,
+   "teacher": "T02",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L010",
+   "class": "5-A",
+   "subject": "REHBERLİK VE YÖNLENDİRME",
+   "elective": false,
+   "teacher": "T02",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L011",
+   "class": "5-A",
+   "subject": "SEÇMELİ MÜZİK",
+   "elective": true,
+   "teacher": "T10",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L012",
+   "class": "5-A",
+   "subject": "SOSYAL BİLGİLER",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L013",
+   "class": "5-A",
+   "subject": "TÜRKÇE 5-6",
+   "elective": false,
+   "teacher": "T02",
+   "hours": 6,
+   "format": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L014",
+   "class": "5-A",
+   "subject": "İNGİLİZCE 5-6",
+   "elective": false,
+   "teacher": "T13",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L015",
+   "class": "5-B",
+   "subject": "AHLAK VE VATANDAŞLIK 5-6-7",
+   "elective": true,
+   "teacher": "T14",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L016",
+   "class": "5-B",
+   "subject": "BEDEN EĞİTİMİ VE SPOR",
+   "elective": false,
+   "teacher": "T11",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L017",
+   "class": "5-B",
+   "subject": "BİLİŞİM TEKNOLOJİLERİ VE YAZ.",
+   "elective": false,
+   "teacher": "T12",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L018",
+   "class": "5-B",
+   "subject": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L019",
+   "class": "5-B",
+   "subject": "FEN BİLİMLERİ",
+   "elective": false,
+   "teacher": "T06",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L020",
+   "class": "5-B",
+   "subject": "GÖRSEL SANATLAR",
+   "elective": false,
+   "teacher": "T17",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L021",
+   "class": "5-B",
+   "subject": "MATEMATİK",
+   "elective": false,
+   "teacher": "T04",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L022",
+   "class": "5-B",
+   "subject": "MÜZİK",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L023",
+   "class": "5-B",
+   "subject": "OKUMA BECERİLERİ",
+   "elective": true,
+   "teacher": "T01",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L024",
+   "class": "5-B",
+   "subject": "REHBERLİK VE YÖNLENDİRME",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L025",
+   "class": "5-B",
+   "subject": "SEÇMELİ MÜZİK",
+   "elective": true,
+   "teacher": "T10",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L026",
+   "class": "5-B",
+   "subject": "SOSYAL BİLGİLER",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L027",
+   "class": "5-B",
+   "subject": "TÜRKÇE 5-6",
+   "elective": false,
+   "teacher": "T01",
+   "hours": 6,
+   "format": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L028",
+   "class": "5-B",
+   "subject": "İNGİLİZCE 5-6",
+   "elective": false,
+   "teacher": "T13",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L029",
+   "class": "6-A",
+   "subject": "AHLAK VE VATANDAŞLIK 5-6-7",
+   "elective": true,
+   "teacher": "T14",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L030",
+   "class": "6-A",
+   "subject": "BEDEN EĞİTİMİ VE SPOR",
+   "elective": false,
+   "teacher": "T11",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L031",
+   "class": "6-A",
+   "subject": "BİLİŞİM TEKNOLOJİLERİ VE YAZ.",
+   "elective": false,
+   "teacher": "T12",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L032",
+   "class": "6-A",
+   "subject": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L033",
+   "class": "6-A",
+   "subject": "FEN BİLİMLERİ",
+   "elective": false,
+   "teacher": "T07",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L034",
+   "class": "6-A",
+   "subject": "GÖRSEL SANATLAR",
+   "elective": false,
+   "teacher": "T17",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L035",
+   "class": "6-A",
+   "subject": "MATEMATİK",
+   "elective": false,
+   "teacher": "T05",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L036",
+   "class": "6-A",
+   "subject": "MÜZİK",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L037",
+   "class": "6-A",
+   "subject": "OKUMA BECERİLERİ",
+   "elective": true,
+   "teacher": "T01",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L038",
+   "class": "6-A",
+   "subject": "REHBERLİK VE YÖNLENDİRME",
+   "elective": false,
+   "teacher": "T05",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L039",
+   "class": "6-A",
+   "subject": "SEÇMELİ MÜZİK",
+   "elective": true,
+   "teacher": "T10",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L040",
+   "class": "6-A",
+   "subject": "SOSYAL BİLGİLER",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L041",
+   "class": "6-A",
+   "subject": "TÜRKÇE 5-6",
+   "elective": false,
+   "teacher": "T02",
+   "hours": 6,
+   "format": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L042",
+   "class": "6-A",
+   "subject": "İNGİLİZCE 5-6",
+   "elective": false,
+   "teacher": "T15",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L043",
+   "class": "6-B",
+   "subject": "AHLAK VE VATANDAŞLIK 5-6-7",
+   "elective": true,
+   "teacher": "T14",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L044",
+   "class": "6-B",
+   "subject": "BEDEN EĞİTİMİ VE SPOR",
+   "elective": false,
+   "teacher": "T11",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L045",
+   "class": "6-B",
+   "subject": "BİLİŞİM TEKNOLOJİLERİ VE YAZ.",
+   "elective": false,
+   "teacher": "T12",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L046",
+   "class": "6-B",
+   "subject": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L047",
+   "class": "6-B",
+   "subject": "FEN BİLİMLERİ",
+   "elective": false,
+   "teacher": "T07",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L048",
+   "class": "6-B",
+   "subject": "GÖRSEL SANATLAR",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L049",
+   "class": "6-B",
+   "subject": "MATEMATİK",
+   "elective": false,
+   "teacher": "T05",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L050",
+   "class": "6-B",
+   "subject": "MÜZİK",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L051",
+   "class": "6-B",
+   "subject": "OKUMA BECERİLERİ",
+   "elective": true,
+   "teacher": "T01",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L052",
+   "class": "6-B",
+   "subject": "REHBERLİK VE YÖNLENDİRME",
+   "elective": false,
+   "teacher": "T03",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L053",
+   "class": "6-B",
+   "subject": "SEÇMELİ MÜZİK",
+   "elective": true,
+   "teacher": "T10",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L054",
+   "class": "6-B",
+   "subject": "SOSYAL BİLGİLER",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L055",
+   "class": "6-B",
+   "subject": "TÜRKÇE 5-6",
+   "elective": false,
+   "teacher": "T03",
+   "hours": 6,
+   "format": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L056",
+   "class": "6-B",
+   "subject": "İNGİLİZCE 5-6",
+   "elective": false,
+   "teacher": "T15",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L057",
+   "class": "7-A",
+   "subject": "AHLAK VE VATANDAŞLIK 5-6-7",
+   "elective": true,
+   "teacher": "T14",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L058",
+   "class": "7-A",
+   "subject": "BEDEN EĞİTİMİ VE SPOR",
+   "elective": false,
+   "teacher": "T11",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L059",
+   "class": "7-A",
+   "subject": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L060",
+   "class": "7-A",
+   "subject": "FEN BİLİMLERİ",
+   "elective": false,
+   "teacher": "T06",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L061",
+   "class": "7-A",
+   "subject": "GÖRGÜ KURALLARI VE NEZAKET",
+   "elective": true,
+   "teacher": "T01",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L062",
+   "class": "7-A",
+   "subject": "GÖRSEL SANATLAR",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L063",
+   "class": "7-A",
+   "subject": "MATEMATİK",
+   "elective": false,
+   "teacher": "T04",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L064",
+   "class": "7-A",
+   "subject": "MATEMATİK VE BİLİM UYG.",
+   "elective": true,
+   "teacher": "T06",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L065",
+   "class": "7-A",
+   "subject": "MÜZİK",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L066",
+   "class": "7-A",
+   "subject": "REHBERLİK VE YÖNLENDİRME",
+   "elective": false,
+   "teacher": "T01",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L067",
+   "class": "7-A",
+   "subject": "SOSYAL BİLGİLER",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L068",
+   "class": "7-A",
+   "subject": "TEKNOLOJİ VE TASARIM",
+   "elective": false,
+   "teacher": "T16",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L069",
+   "class": "7-A",
+   "subject": "TÜRKÇE 7-8",
+   "elective": false,
+   "teacher": "T01",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L070",
+   "class": "7-A",
+   "subject": "İNGİLİZCE 7-8",
+   "elective": false,
+   "teacher": "T13",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L071",
+   "class": "7-B",
+   "subject": "AHLAK VE VATANDAŞLIK 5-6-7",
+   "elective": true,
+   "teacher": "T14",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L072",
+   "class": "7-B",
+   "subject": "BEDEN EĞİTİMİ VE SPOR",
+   "elective": false,
+   "teacher": "T11",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L073",
+   "class": "7-B",
+   "subject": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L074",
+   "class": "7-B",
+   "subject": "FEN BİLİMLERİ",
+   "elective": false,
+   "teacher": "T06",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L075",
+   "class": "7-B",
+   "subject": "GÖRGÜ KURALLARI VE NEZAKET",
+   "elective": true,
+   "teacher": "T03",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L076",
+   "class": "7-B",
+   "subject": "GÖRSEL SANATLAR",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L077",
+   "class": "7-B",
+   "subject": "MATEMATİK",
+   "elective": false,
+   "teacher": "T04",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L078",
+   "class": "7-B",
+   "subject": "MATEMATİK VE BİLİM UYG.",
+   "elective": true,
+   "teacher": "T06",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L079",
+   "class": "7-B",
+   "subject": "MÜZİK",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L080",
+   "class": "7-B",
+   "subject": "REHBERLİK VE YÖNLENDİRME",
+   "elective": false,
+   "teacher": "T06",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L081",
+   "class": "7-B",
+   "subject": "SOSYAL BİLGİLER",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 3,
+   "format": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L082",
+   "class": "7-B",
+   "subject": "TEKNOLOJİ VE TASARIM",
+   "elective": false,
+   "teacher": "T17",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L083",
+   "class": "7-B",
+   "subject": "TÜRKÇE 7-8",
+   "elective": false,
+   "teacher": "T03",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L084",
+   "class": "7-B",
+   "subject": "İNGİLİZCE 7-8",
+   "elective": false,
+   "teacher": "T13",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L085",
+   "class": "8-A",
+   "subject": "BEDEN EĞİTİMİ VE SPOR",
+   "elective": false,
+   "teacher": "T11",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L086",
+   "class": "8-A",
+   "subject": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L087",
+   "class": "8-A",
+   "subject": "FEN BİLİMLERİ",
+   "elective": false,
+   "teacher": "T07",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L088",
+   "class": "8-A",
+   "subject": "GÖRGÜ KURALLARI VE NEZAKET",
+   "elective": true,
+   "teacher": "T02",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L089",
+   "class": "8-A",
+   "subject": "GÖRSEL SANATLAR",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L090",
+   "class": "8-A",
+   "subject": "MATEMATİK",
+   "elective": false,
+   "teacher": "T05",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L091",
+   "class": "8-A",
+   "subject": "MÜZİK",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L092",
+   "class": "8-A",
+   "subject": "PEYGAMBERİMİZİN HAYATI 8",
+   "elective": true,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L093",
+   "class": "8-A",
+   "subject": "REHBERLİK VE YÖNLENDİRME",
+   "elective": false,
+   "teacher": "T07",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L094",
+   "class": "8-A",
+   "subject": "T.C İNKILAP TARİHİ VE ATATÜRK.",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L095",
+   "class": "8-A",
+   "subject": "TEKNOLOJİ VE TASARIM",
+   "elective": false,
+   "teacher": "T17",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L096",
+   "class": "8-A",
+   "subject": "TEMEL YAŞAM BECERİLERİ",
+   "elective": true,
+   "teacher": "T07",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L097",
+   "class": "8-A",
+   "subject": "TÜRKÇE 7-8",
+   "elective": false,
+   "teacher": "T02",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L098",
+   "class": "8-A",
+   "subject": "İNGİLİZCE 7-8",
+   "elective": false,
+   "teacher": "T13",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L099",
+   "class": "8-B",
+   "subject": "BEDEN EĞİTİMİ VE SPOR",
+   "elective": false,
+   "teacher": "T11",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L100",
+   "class": "8-B",
+   "subject": "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ",
+   "elective": false,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L101",
+   "class": "8-B",
+   "subject": "FEN BİLİMLERİ",
+   "elective": false,
+   "teacher": "T07",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "L102",
+   "class": "8-B",
+   "subject": "GÖRGÜ KURALLARI VE NEZAKET",
+   "elective": true,
+   "teacher": "T03",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L103",
+   "class": "8-B",
+   "subject": "GÖRSEL SANATLAR",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L104",
+   "class": "8-B",
+   "subject": "MATEMATİK",
+   "elective": false,
+   "teacher": "T04",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L105",
+   "class": "8-B",
+   "subject": "MÜZİK",
+   "elective": false,
+   "teacher": "T10",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L106",
+   "class": "8-B",
+   "subject": "PEYGAMBERİMİZİN HAYATI 8",
+   "elective": true,
+   "teacher": "T09",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L107",
+   "class": "8-B",
+   "subject": "REHBERLİK VE YÖNLENDİRME",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 1,
+   "format": [
+    1
+   ]
+  },
+  {
+   "id": "L108",
+   "class": "8-B",
+   "subject": "T.C İNKILAP TARİHİ VE ATATÜRK.",
+   "elective": false,
+   "teacher": "T08",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L109",
+   "class": "8-B",
+   "subject": "TEKNOLOJİ VE TASARIM",
+   "elective": false,
+   "teacher": "T17",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L110",
+   "class": "8-B",
+   "subject": "TEMEL YAŞAM BECERİLERİ",
+   "elective": true,
+   "teacher": "T07",
+   "hours": 2,
+   "format": [
+    2
+   ]
+  },
+  {
+   "id": "L111",
+   "class": "8-B",
+   "subject": "TÜRKÇE 7-8",
+   "elective": false,
+   "teacher": "T03",
+   "hours": 5,
+   "format": [
+    2,
+    2,
+    1
+   ]
+  },
+  {
+   "id": "L112",
+   "class": "8-B",
+   "subject": "İNGİLİZCE 7-8",
+   "elective": false,
+   "teacher": "T13",
+   "hours": 4,
+   "format": [
+    2,
+    2
+   ]
+  }
+ ],
+ "progmatic_placement": [
+  {
+   "lesson": "L001",
+   "day": 3,
+   "period": 1
+  },
+  {
+   "lesson": "L002",
+   "day": 5,
+   "period": 4
+  },
+  {
+   "lesson": "L002",
+   "day": 5,
+   "period": 5
+  },
+  {
+   "lesson": "L003",
+   "day": 2,
+   "period": 1
+  },
+  {
+   "lesson": "L003",
+   "day": 2,
+   "period": 2
+  },
+  {
+   "lesson": "L004",
+   "day": 4,
+   "period": 1
+  },
+  {
+   "lesson": "L004",
+   "day": 4,
+   "period": 2
+  },
+  {
+   "lesson": "L005",
+   "day": 3,
+   "period": 6
+  },
+  {
+   "lesson": "L005",
+   "day": 3,
+   "period": 7
+  },
+  {
+   "lesson": "L005",
+   "day": 5,
+   "period": 6
+  },
+  {
+   "lesson": "L005",
+   "day": 5,
+   "period": 7
+  },
+  {
+   "lesson": "L006",
+   "day": 1,
+   "period": 7
+  },
+  {
+   "lesson": "L007",
+   "day": 1,
+   "period": 3
+  },
+  {
+   "lesson": "L007",
+   "day": 1,
+   "period": 4
+  },
+  {
+   "lesson": "L007",
+   "day": 2,
+   "period": 7
+  },
+  {
+   "lesson": "L007",
+   "day": 3,
+   "period": 4
+  },
+  {
+   "lesson": "L007",
+   "day": 3,
+   "period": 5
+  },
+  {
+   "lesson": "L008",
+   "day": 1,
+   "period": 2
+  },
+  {
+   "lesson": "L009",
+   "day": 2,
+   "period": 5
+  },
+  {
+   "lesson": "L009",
+   "day": 2,
+   "period": 6
+  },
+  {
+   "lesson": "L010",
+   "day": 1,
+   "period": 1
+  },
+  {
+   "lesson": "L011",
+   "day": 1,
+   "period": 5
+  },
+  {
+   "lesson": "L011",
+   "day": 1,
+   "period": 6
+  },
+  {
+   "lesson": "L012",
+   "day": 3,
+   "period": 2
+  },
+  {
+   "lesson": "L012",
+   "day": 3,
+   "period": 3
+  },
+  {
+   "lesson": "L012",
+   "day": 4,
+   "period": 5
+  },
+  {
+   "lesson": "L013",
+   "day": 2,
+   "period": 3
+  },
+  {
+   "lesson": "L013",
+   "day": 2,
+   "period": 4
+  },
+  {
+   "lesson": "L013",
+   "day": 4,
+   "period": 3
+  },
+  {
+   "lesson": "L013",
+   "day": 4,
+   "period": 4
+  },
+  {
+   "lesson": "L013",
+   "day": 5,
+   "period": 1
+  },
+  {
+   "lesson": "L013",
+   "day": 5,
+   "period": 2
+  },
+  {
+   "lesson": "L014",
+   "day": 4,
+   "period": 6
+  },
+  {
+   "lesson": "L014",
+   "day": 4,
+   "period": 7
+  },
+  {
+   "lesson": "L014",
+   "day": 5,
+   "period": 3
+  },
+  {
+   "lesson": "L015",
+   "day": 5,
+   "period": 3
+  },
+  {
+   "lesson": "L016",
+   "day": 5,
+   "period": 6
+  },
+  {
+   "lesson": "L016",
+   "day": 5,
+   "period": 7
+  },
+  {
+   "lesson": "L017",
+   "day": 1,
+   "period": 6
+  },
+  {
+   "lesson": "L017",
+   "day": 1,
+   "period": 7
+  },
+  {
+   "lesson": "L018",
+   "day": 1,
+   "period": 2
+  },
+  {
+   "lesson": "L018",
+   "day": 1,
+   "period": 3
+  },
+  {
+   "lesson": "L019",
+   "day": 2,
+   "period": 6
+  },
+  {
+   "lesson": "L019",
+   "day": 2,
+   "period": 7
+  },
+  {
+   "lesson": "L019",
+   "day": 3,
+   "period": 1
+  },
+  {
+   "lesson": "L019",
+   "day": 3,
+   "period": 2
+  },
+  {
+   "lesson": "L020",
+   "day": 2,
+   "period": 1
+  },
+  {
+   "lesson": "L021",
+   "day": 3,
+   "period": 6
+  },
+  {
+   "lesson": "L021",
+   "day": 3,
+   "period": 7
+  },
+  {
+   "lesson": "L021",
+   "day": 4,
+   "period": 5
+  },
+  {
+   "lesson": "L021",
+   "day": 5,
+   "period": 4
+  },
+  {
+   "lesson": "L021",
+   "day": 5,
+   "period": 5
+  },
+  {
+   "lesson": "L022",
+   "day": 2,
+   "period": 5
+  },
+  {
+   "lesson": "L023",
+   "day": 5,
+   "period": 1
+  },
+  {
+   "lesson": "L023",
+   "day": 5,
+   "period": 2
+  },
+  {
+   "lesson": "L024",
+   "day": 3,
+   "period": 5
+  },
+  {
+   "lesson": "L025",
+   "day": 2,
+   "period": 2
+  },
+  {
+   "lesson": "L025",
+   "day": 2,
+   "period": 3
+  },
+  {
+   "lesson": "L026",
+   "day": 2,
+   "period": 4
+  },
+  {
+   "lesson": "L026",
+   "day": 4,
+   "period": 6
+  },
+  {
+   "lesson": "L026",
+   "day": 4,
+   "period": 7
+  },
+  {
+   "lesson": "L027",
+   "day": 1,
+   "period": 4
+  },
+  {
+   "lesson": "L027",
+   "day": 1,
+   "period": 5
+  },
+  {
+   "lesson": "L027",
+   "day": 3,
+   "period": 3
+  },
+  {
+   "lesson": "L027",
+   "day": 3,
+   "period": 4
+  },
+  {
+   "lesson": "L027",
+   "day": 4,
+   "period": 3
+  },
+  {
+   "lesson": "L027",
+   "day": 4,
+   "period": 4
+  },
+  {
+   "lesson": "L028",
+   "day": 1,
+   "period": 1
+  },
+  {
+   "lesson": "L028",
+   "day": 4,
+   "period": 1
+  },
+  {
+   "lesson": "L028",
+   "day": 4,
+   "period": 2
+  },
+  {
+   "lesson": "L029",
+   "day": 5,
+   "period": 7
+  },
+  {
+   "lesson": "L030",
+   "day": 3,
+   "period": 6
+  },
+  {
+   "lesson": "L030",
+   "day": 3,
+   "period": 7
+  },
+  {
+   "lesson": "L031",
+   "day": 1,
+   "period": 1
+  },
+  {
+   "lesson": "L031",
+   "day": 1,
+   "period": 2
+  },
+  {
+   "lesson": "L032",
+   "day": 2,
+   "period": 4
+  },
+  {
+   "lesson": "L032",
+   "day": 2,
+   "period": 5
+  },
+  {
+   "lesson": "L033",
+   "day": 2,
+   "period": 6
+  },
+  {
+   "lesson": "L033",
+   "day": 2,
+   "period": 7
+  },
+  {
+   "lesson": "L033",
+   "day": 4,
+   "period": 3
+  },
+  {
+   "lesson": "L033",
+   "day": 4,
+   "period": 4
+  },
+  {
+   "lesson": "L034",
+   "day": 2,
+   "period": 3
+  },
+  {
+   "lesson": "L035",
+   "day": 1,
+   "period": 7
+  },
+  {
+   "lesson": "L035",
+   "day": 2,
+   "period": 1
+  },
+  {
+   "lesson": "L035",
+   "day": 2,
+   "period": 2
+  },
+  {
+   "lesson": "L035",
+   "day": 4,
+   "period": 1
+  },
+  {
+   "lesson": "L035",
+   "day": 4,
+   "period": 2
+  },
+  {
+   "lesson": "L036",
+   "day": 3,
+   "period": 4
+  },
+  {
+   "lesson": "L037",
+   "day": 5,
+   "period": 3
+  },
+  {
+   "lesson": "L037",
+   "day": 5,
+   "period": 4
+  },
+  {
+   "lesson": "L038",
+   "day": 3,
+   "period": 3
+  },
+  {
+   "lesson": "L039",
+   "day": 3,
+   "period": 1
+  },
+  {
+   "lesson": "L039",
+   "day": 3,
+   "period": 2
+  },
+  {
+   "lesson": "L040",
+   "day": 1,
+   "period": 5
+  },
+  {
+   "lesson": "L040",
+   "day": 1,
+   "period": 6
+  },
+  {
+   "lesson": "L040",
+   "day": 3,
+   "period": 5
+  },
+  {
+   "lesson": "L041",
+   "day": 1,
+   "period": 3
+  },
+  {
+   "lesson": "L041",
+   "day": 1,
+   "period": 4
+  },
+  {
+   "lesson": "L041",
+   "day": 4,
+   "period": 5
+  },
+  {
+   "lesson": "L041",
+   "day": 4,
+   "period": 6
+  },
+  {
+   "lesson": "L041",
+   "day": 5,
+   "period": 5
+  },
+  {
+   "lesson": "L041",
+   "day": 5,
+   "period": 6
+  },
+  {
+   "lesson": "L042",
+   "day": 4,
+   "period": 7
+  },
+  {
+   "lesson": "L042",
+   "day": 5,
+   "period": 1
+  },
+  {
+   "lesson": "L042",
+   "day": 5,
+   "period": 2
+  },
+  {
+   "lesson": "L043",
+   "day": 5,
+   "period": 1
+  },
+  {
+   "lesson": "L044",
+   "day": 3,
+   "period": 4
+  },
+  {
+   "lesson": "L044",
+   "day": 3,
+   "period": 5
+  },
+  {
+   "lesson": "L045",
+   "day": 1,
+   "period": 3
+  },
+  {
+   "lesson": "L045",
+   "day": 1,
+   "period": 4
+  },
+  {
+   "lesson": "L046",
+   "day": 2,
+   "period": 1
+  },
+  {
+   "lesson": "L046",
+   "day": 2,
+   "period": 2
+  },
+  {
+   "lesson": "L047",
+   "day": 3,
+   "period": 6
+  },
+  {
+   "lesson": "L047",
+   "day": 3,
+   "period": 7
+  },
+  {
+   "lesson": "L047",
+   "day": 5,
+   "period": 2
+  },
+  {
+   "lesson": "L047",
+   "day": 5,
+   "period": 3
+  },
+  {
+   "lesson": "L048",
+   "day": 2,
+   "period": 4
+  },
+  {
+   "lesson": "L049",
+   "day": 1,
+   "period": 5
+  },
+  {
+   "lesson": "L049",
+   "day": 1,
+   "period": 6
+  },
+  {
+   "lesson": "L049",
+   "day": 2,
+   "period": 5
+  },
+  {
+   "lesson": "L049",
+   "day": 2,
+   "period": 6
+  },
+  {
+   "lesson": "L049",
+   "day": 3,
+   "period": 1
+  },
+  {
+   "lesson": "L050",
+   "day": 1,
+   "period": 7
+  },
+  {
+   "lesson": "L051",
+   "day": 4,
+   "period": 1
+  },
+  {
+   "lesson": "L051",
+   "day": 4,
+   "period": 2
+  },
+  {
+   "lesson": "L052",
+   "day": 2,
+   "period": 3
+  },
+  {
+   "lesson": "L053",
+   "day": 4,
+   "period": 3
+  },
+  {
+   "lesson": "L053",
+   "day": 4,
+   "period": 4
+  },
+  {
+   "lesson": "L054",
+   "day": 1,
+   "period": 1
+  },
+  {
+   "lesson": "L054",
+   "day": 1,
+   "period": 2
+  },
+  {
+   "lesson": "L054",
+   "day": 2,
+   "period": 7
+  },
+  {
+   "lesson": "L055",
+   "day": 3,
+   "period": 2
+  },
+  {
+   "lesson": "L055",
+   "day": 3,
+   "period": 3
+  },
+  {
+   "lesson": "L055",
+   "day": 4,
+   "period": 6
+  },
+  {
+   "lesson": "L055",
+   "day": 4,
+   "period": 7
+  },
+  {
+   "lesson": "L055",
+   "day": 5,
+   "period": 6
+  },
+  {
+   "lesson": "L055",
+   "day": 5,
+   "period": 7
+  },
+  {
+   "lesson": "L056",
+   "day": 4,
+   "period": 5
+  },
+  {
+   "lesson": "L056",
+   "day": 5,
+   "period": 4
+  },
+  {
+   "lesson": "L056",
+   "day": 5,
+   "period": 5
+  },
+  {
+   "lesson": "L057",
+   "day": 2,
+   "period": 7
+  },
+  {
+   "lesson": "L058",
+   "day": 4,
+   "period": 6
+  },
+  {
+   "lesson": "L058",
+   "day": 4,
+   "period": 7
+  },
+  {
+   "lesson": "L059",
+   "day": 1,
+   "period": 4
+  },
+  {
+   "lesson": "L059",
+   "day": 1,
+   "period": 5
+  },
+  {
+   "lesson": "L060",
+   "day": 3,
+   "period": 3
+  },
+  {
+   "lesson": "L060",
+   "day": 3,
+   "period": 4
+  },
+  {
+   "lesson": "L060",
+   "day": 5,
+   "period": 3
+  },
+  {
+   "lesson": "L060",
+   "day": 5,
+   "period": 4
+  },
+  {
+   "lesson": "L061",
+   "day": 3,
+   "period": 1
+  },
+  {
+   "lesson": "L061",
+   "day": 3,
+   "period": 2
+  },
+  {
+   "lesson": "L062",
+   "day": 4,
+   "period": 2
+  },
+  {
+   "lesson": "L063",
+   "day": 3,
+   "period": 5
+  },
+  {
+   "lesson": "L063",
+   "day": 4,
+   "period": 3
+  },
+  {
+   "lesson": "L063",
+   "day": 4,
+   "period": 4
+  },
+  {
+   "lesson": "L063",
+   "day": 5,
+   "period": 1
+  },
+  {
+   "lesson": "L063",
+   "day": 5,
+   "period": 2
+  },
+  {
+   "lesson": "L064",
+   "day": 2,
+   "period": 3
+  },
+  {
+   "lesson": "L064",
+   "day": 2,
+   "period": 4
+  },
+  {
+   "lesson": "L065",
+   "day": 4,
+   "period": 1
+  },
+  {
+   "lesson": "L066",
+   "day": 5,
+   "period": 5
+  },
+  {
+   "lesson": "L067",
+   "day": 1,
+   "period": 3
+  },
+  {
+   "lesson": "L067",
+   "day": 2,
+   "period": 5
+  },
+  {
+   "lesson": "L067",
+   "day": 2,
+   "period": 6
+  },
+  {
+   "lesson": "L068",
+   "day": 5,
+   "period": 6
+  },
+  {
+   "lesson": "L068",
+   "day": 5,
+   "period": 7
+  },
+  {
+   "lesson": "L069",
+   "day": 1,
+   "period": 1
+  },
+  {
+   "lesson": "L069",
+   "day": 1,
+   "period": 2
+  },
+  {
+   "lesson": "L069",
+   "day": 2,
+   "period": 1
+  },
+  {
+   "lesson": "L069",
+   "day": 2,
+   "period": 2
+  },
+  {
+   "lesson": "L069",
+   "day": 4,
+   "period": 5
+  },
+  {
+   "lesson": "L070",
+   "day": 1,
+   "period": 6
+  },
+  {
+   "lesson": "L070",
+   "day": 1,
+   "period": 7
+  },
+  {
+   "lesson": "L070",
+   "day": 3,
+   "period": 6
+  },
+  {
+   "lesson": "L070",
+   "day": 3,
+   "period": 7
+  },
+  {
+   "lesson": "L071",
+   "day": 1,
+   "period": 7
+  },
+  {
+   "lesson": "L072",
+   "day": 3,
+   "period": 1
+  },
+  {
+   "lesson": "L072",
+   "day": 3,
+   "period": 2
+  },
+  {
+   "lesson": "L073",
+   "day": 3,
+   "period": 3
+  },
+  {
+   "lesson": "L073",
+   "day": 3,
+   "period": 4
+  },
+  {
+   "lesson": "L074",
+   "day": 2,
+   "period": 1
+  },
+  {
+   "lesson": "L074",
+   "day": 2,
+   "period": 2
+  },
+  {
+   "lesson": "L074",
+   "day": 4,
+   "period": 6
+  },
+  {
+   "lesson": "L074",
+   "day": 4,
+   "period": 7
+  },
+  {
+   "lesson": "L075",
+   "day": 2,
+   "period": 6
+  },
+  {
+   "lesson": "L075",
+   "day": 2,
+   "period": 7
+  },
+  {
+   "lesson": "L076",
+   "day": 1,
+   "period": 4
+  },
+  {
+   "lesson": "L077",
+   "day": 2,
+   "period": 4
+  },
+  {
+   "lesson": "L077",
+   "day": 2,
+   "period": 5
+  },
+  {
+   "lesson": "L077",
+   "day": 4,
+   "period": 1
+  },
+  {
+   "lesson": "L077",
+   "day": 5,
+   "period": 6
+  },
+  {
+   "lesson": "L077",
+   "day": 5,
+   "period": 7
+  },
+  {
+   "lesson": "L078",
+   "day": 5,
+   "period": 1
+  },
+  {
+   "lesson": "L078",
+   "day": 5,
+   "period": 2
+  },
+  {
+   "lesson": "L079",
+   "day": 1,
+   "period": 1
+  },
+  {
+   "lesson": "L080",
+   "day": 3,
+   "period": 5
+  },
+  {
+   "lesson": "L081",
+   "day": 2,
+   "period": 3
+  },
+  {
+   "lesson": "L081",
+   "day": 4,
+   "period": 2
+  },
+  {
+   "lesson": "L081",
+   "day": 4,
+   "period": 3
+  },
+  {
+   "lesson": "L082",
+   "day": 1,
+   "period": 5
+  },
+  {
+   "lesson": "L082",
+   "day": 1,
+   "period": 6
+  },
+  {
+   "lesson": "L083",
+   "day": 3,
+   "period": 6
+  },
+  {
+   "lesson": "L083",
+   "day": 3,
+   "period": 7
+  },
+  {
+   "lesson": "L083",
+   "day": 4,
+   "period": 4
+  },
+  {
+   "lesson": "L083",
+   "day": 4,
+   "period": 5
+  },
+  {
+   "lesson": "L083",
+   "day": 5,
+   "period": 3
+  },
+  {
+   "lesson": "L084",
+   "day": 1,
+   "period": 2
+  },
+  {
+   "lesson": "L084",
+   "day": 1,
+   "period": 3
+  },
+  {
+   "lesson": "L084",
+   "day": 5,
+   "period": 4
+  },
+  {
+   "lesson": "L084",
+   "day": 5,
+   "period": 5
+  },
+  {
+   "lesson": "L085",
+   "day": 5,
+   "period": 1
+  },
+  {
+   "lesson": "L085",
+   "day": 5,
+   "period": 2
+  },
+  {
+   "lesson": "L086",
+   "day": 3,
+   "period": 1
+  },
+  {
+   "lesson": "L086",
+   "day": 3,
+   "period": 2
+  },
+  {
+   "lesson": "L087",
+   "day": 3,
+   "period": 4
+  },
+  {
+   "lesson": "L087",
+   "day": 3,
+   "period": 5
+  },
+  {
+   "lesson": "L087",
+   "day": 4,
+   "period": 6
+  },
+  {
+   "lesson": "L087",
+   "day": 4,
+   "period": 7
+  },
+  {
+   "lesson": "L088",
+   "day": 2,
+   "period": 1
+  },
+  {
+   "lesson": "L088",
+   "day": 2,
+   "period": 2
+  },
+  {
+   "lesson": "L089",
+   "day": 1,
+   "period": 7
+  },
+  {
+   "lesson": "L090",
+   "day": 1,
+   "period": 1
+  },
+  {
+   "lesson": "L090",
+   "day": 1,
+   "period": 2
+  },
+  {
+   "lesson": "L090",
+   "day": 2,
+   "period": 3
+  },
+  {
+   "lesson": "L090",
+   "day": 2,
+   "period": 4
+  },
+  {
+   "lesson": "L090",
+   "day": 4,
+   "period": 3
+  },
+  {
+   "lesson": "L091",
+   "day": 3,
+   "period": 3
+  },
+  {
+   "lesson": "L092",
+   "day": 2,
+   "period": 6
+  },
+  {
+   "lesson": "L092",
+   "day": 2,
+   "period": 7
+  },
+  {
+   "lesson": "L093",
+   "day": 2,
+   "period": 5
+  },
+  {
+   "lesson": "L094",
+   "day": 3,
+   "period": 6
+  },
+  {
+   "lesson": "L094",
+   "day": 3,
+   "period": 7
+  },
+  {
+   "lesson": "L095",
+   "day": 1,
+   "period": 3
+  },
+  {
+   "lesson": "L095",
+   "day": 1,
+   "period": 4
+  },
+  {
+   "lesson": "L096",
+   "day": 5,
+   "period": 4
+  },
+  {
+   "lesson": "L096",
+   "day": 5,
+   "period": 5
+  },
+  {
+   "lesson": "L097",
+   "day": 1,
+   "period": 5
+  },
+  {
+   "lesson": "L097",
+   "day": 1,
+   "period": 6
+  },
+  {
+   "lesson": "L097",
+   "day": 4,
+   "period": 1
+  },
+  {
+   "lesson": "L097",
+   "day": 4,
+   "period": 2
+  },
+  {
+   "lesson": "L097",
+   "day": 5,
+   "period": 3
+  },
+  {
+   "lesson": "L098",
+   "day": 4,
+   "period": 4
+  },
+  {
+   "lesson": "L098",
+   "day": 4,
+   "period": 5
+  },
+  {
+   "lesson": "L098",
+   "day": 5,
+   "period": 6
+  },
+  {
+   "lesson": "L098",
+   "day": 5,
+   "period": 7
+  },
+  {
+   "lesson": "L099",
+   "day": 4,
+   "period": 4
+  },
+  {
+   "lesson": "L099",
+   "day": 4,
+   "period": 5
+  },
+  {
+   "lesson": "L100",
+   "day": 1,
+   "period": 6
+  },
+  {
+   "lesson": "L100",
+   "day": 1,
+   "period": 7
+  },
+  {
+   "lesson": "L101",
+   "day": 3,
+   "period": 2
+  },
+  {
+   "lesson": "L101",
+   "day": 3,
+   "period": 3
+  },
+  {
+   "lesson": "L101",
+   "day": 5,
+   "period": 6
+  },
+  {
+   "lesson": "L101",
+   "day": 5,
+   "period": 7
+  },
+  {
+   "lesson": "L102",
+   "day": 5,
+   "period": 4
+  },
+  {
+   "lesson": "L102",
+   "day": 5,
+   "period": 5
+  },
+  {
+   "lesson": "L103",
+   "day": 4,
+   "period": 1
+  },
+  {
+   "lesson": "L104",
+   "day": 2,
+   "period": 6
+  },
+  {
+   "lesson": "L104",
+   "day": 2,
+   "period": 7
+  },
+  {
+   "lesson": "L104",
+   "day": 4,
+   "period": 6
+  },
+  {
+   "lesson": "L104",
+   "day": 4,
+   "period": 7
+  },
+  {
+   "lesson": "L104",
+   "day": 5,
+   "period": 3
+  },
+  {
+   "lesson": "L105",
+   "day": 1,
+   "period": 3
+  },
+  {
+   "lesson": "L106",
+   "day": 3,
+   "period": 6
+  },
+  {
+   "lesson": "L106",
+   "day": 3,
+   "period": 7
+  },
+  {
+   "lesson": "L107",
+   "day": 3,
+   "period": 1
+  },
+  {
+   "lesson": "L108",
+   "day": 2,
+   "period": 1
+  },
+  {
+   "lesson": "L108",
+   "day": 2,
+   "period": 2
+  },
+  {
+   "lesson": "L109",
+   "day": 1,
+   "period": 1
+  },
+  {
+   "lesson": "L109",
+   "day": 1,
+   "period": 2
+  },
+  {
+   "lesson": "L110",
+   "day": 2,
+   "period": 3
+  },
+  {
+   "lesson": "L110",
+   "day": 2,
+   "period": 4
+  },
+  {
+   "lesson": "L111",
+   "day": 2,
+   "period": 5
+  },
+  {
+   "lesson": "L111",
+   "day": 3,
+   "period": 4
+  },
+  {
+   "lesson": "L111",
+   "day": 3,
+   "period": 5
+  },
+  {
+   "lesson": "L111",
+   "day": 4,
+   "period": 2
+  },
+  {
+   "lesson": "L111",
+   "day": 4,
+   "period": 3
+  },
+  {
+   "lesson": "L112",
+   "day": 1,
+   "period": 4
+  },
+  {
+   "lesson": "L112",
+   "day": 1,
+   "period": 5
+  },
+  {
+   "lesson": "L112",
+   "day": 5,
+   "period": 1
+  },
+  {
+   "lesson": "L112",
+   "day": 5,
+   "period": 2
+  }
+ ],
+ "progmatic_baseline": {
+  "teacher_gap_hours": 24,
+  "one_lesson_days": 3,
+  "same_lesson_blocks_on_neighbouring_days": 32,
+  "note": "Reached with extra hand-closed hours for tidiness (not included in 'closed')."
+ }
+}

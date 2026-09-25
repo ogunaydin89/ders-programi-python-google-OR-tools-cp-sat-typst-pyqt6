@@ -1,0 +1,68 @@
+{
+ "id": "ortaokul",
+ "name": "Ortaokul",
+ "version": "2025-TTK04",
+ "source": "Talim ve Terbiye Kurulu karar no. 04, 09/05/2025 (sources/2025-05_TTK-04_ilkogretim-ortaokul_cizelge.pdf)",
+ "grades": [5, 6, 7, 8],
+ "weekly_total": {"5": 35, "6": 35, "7": 35, "8": 35},
+ "default_daily_hours": {"5": [7, 7, 7, 7, 7], "6": [7, 7, 7, 7, 7], "7": [7, 7, 7, 7, 7], "8": [7, 7, 7, 7, 7]},
+ "compulsory": [
+  {"name": "Türkçe", "hours": {"5": 6, "6": 6, "7": 5, "8": 5}},
+  {"name": "Matematik", "hours": {"5": 5, "6": 5, "7": 5, "8": 5}},
+  {"name": "Fen Bilimleri", "hours": {"5": 4, "6": 4, "7": 4, "8": 4}},
+  {"name": "Sosyal Bilgiler", "hours": {"5": 3, "6": 3, "7": 3}},
+  {"name": "T.C. İnkılap Tarihi ve Atatürkçülük", "short": "İNK", "hours": {"8": 2}},
+  {"name": "Yabancı Dil", "short": "İNG", "hours": {"5": 3, "6": 3, "7": 4, "8": 4}},
+  {"name": "Din Kültürü ve Ahlak Bilgisi", "short": "DKAB", "hours": {"5": 2, "6": 2, "7": 2, "8": 2}},
+  {"name": "Görsel Sanatlar", "hours": {"5": 1, "6": 1, "7": 1, "8": 1}},
+  {"name": "Müzik", "hours": {"5": 1, "6": 1, "7": 1, "8": 1}},
+  {"name": "Beden Eğitimi ve Spor", "hours": {"5": 2, "6": 2, "7": 2, "8": 2}},
+  {"name": "Teknoloji ve Tasarım", "hours": {"7": 2, "8": 2}},
+  {"name": "Bilişim Teknolojileri ve Yazılım", "hours": {"5": 2, "6": 2}},
+  {"name": "Rehberlik ve Yönlendirme", "rehberlik": true, "hours": {"5": 1, "6": 1, "7": 1, "8": 1}}
+ ],
+ "choice_lessons": [],
+ "electives": {
+  "hours": {"5": 5, "6": 5, "7": 5, "8": 6},
+  "groups": [
+   {"id": "ITB", "name": "İnsan, Toplum ve Bilim"},
+   {"id": "DAD", "name": "Din, Ahlak ve Değer"},
+   {"id": "KSS", "name": "Kültür, Sanat ve Spor"}
+  ],
+  "rules": [
+   {"grades": [5, 6, 7, 8], "exactly_one_from_each": ["ITB", "DAD", "KSS"]}
+  ],
+  "courses": [
+   {"name": "Matematik ve Bilim Uygulamaları", "group": "ITB", "options": {"6": [2], "7": [2]}},
+   {"name": "Okuma Becerileri", "group": "ITB", "options": {"5": [2], "6": [2]}},
+   {"name": "Yazarlık ve Yazma Becerileri", "group": "ITB", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2], "8": [2]}},
+   {"name": "Yaşayan Diller ve Lehçeler", "group": "ITB", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Yabancı Dil", "short": "S.İNG", "group": "ITB", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Çevre Eğitimi ve İklim Değişikliği", "group": "ITB", "options": {"6": [2], "7": [2], "8": [2]}},
+   {"name": "Şehrimiz", "group": "ITB", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2], "8": [2]}},
+   {"name": "Hukuk ve Adalet", "group": "ITB", "options": {"6": [2], "7": [2], "8": [2]}},
+   {"name": "Düşünme Eğitimi", "group": "ITB", "options": {"7": [1, 2], "8": [2]}},
+   {"name": "Robotik Kodlama", "group": "ITB", "options": {"5": [2], "6": [2]}},
+   {"name": "Yapay Zeka Uygulamaları", "group": "ITB", "options": {"7": [2], "8": [2]}},
+   {"name": "Proje Tasarımı ve Uygulamaları", "group": "ITB", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2]}},
+   {"name": "Okul Temelli Sosyal Sorumluluk Çalışmaları", "group": "ITB", "options": {"6": [2], "7": [2], "8": [2]}},
+   {"name": "Medya Okuryazarlığı", "group": "ITB", "options": {"7": [2], "8": [2]}},
+   {"name": "Afet Bilinci", "group": "ITB", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2]}},
+   {"name": "Temel Yaşam Becerileri", "group": "ITB", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2], "8": [2]}},
+   {"name": "Türk Sosyal Hayatında Aile", "group": "ITB", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Kur'an-ı Kerim", "group": "DAD", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Peygamberimizin Hayatı", "group": "DAD", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Temel Dinî Bilgiler", "short": "S.TDB", "group": "DAD", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Kültür ve Medeniyetimize Yön Verenler", "group": "DAD", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Ahlak ve Vatandaşlık Eğitimi", "group": "DAD", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2], "8": [2]}},
+   {"name": "Görgü Kuralları ve Nezaket", "group": "KSS", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Müzik", "group": "KSS", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2], "8": [2]}},
+   {"name": "Spor ve Fizikî Etkinlikler", "group": "KSS", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}},
+   {"name": "Oyun ve Oyun Etkinlikleri", "group": "KSS", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2]}},
+   {"name": "Dijital Sanatlar", "group": "KSS", "options": {"6": [1, 2], "7": [1, 2]}},
+   {"name": "Masal ve Destanlarımız", "group": "KSS", "options": {"5": [1, 2], "6": [1, 2], "7": [1, 2], "8": [2]}},
+   {"name": "Geleneksel Sanatlar", "group": "KSS", "options": {"6": [1, 2], "7": [1, 2]}},
+   {"name": "Halk Oyunları", "group": "KSS", "options": {"5": [2], "6": [2], "7": [2], "8": [2]}}
+  ]
+ }
+}
