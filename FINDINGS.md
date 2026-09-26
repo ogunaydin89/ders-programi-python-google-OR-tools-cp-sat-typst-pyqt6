@@ -20,6 +20,16 @@ Planned-but-unbuilt features are listed separately in PLAN.md, section 14.
   a "Yedekleri göster" item that opens the backup folder; and a reminder in the title bar/status line while the project
   has never been saved.
 
+### F4 — Work entered after a save was lost ("it does not auto save")
+- **Seen:** 2026-09-26: the project file was last written at the manual save (11:15); later entries were missing.
+- **Checked:** the autosave timer itself works (reproduced on a copy of the file: an edit was written on the next tick).
+- **Weak spots that explain it:**
+  1. Text fields (names, short forms, school name, …) are applied only on Enter or leaving the field. Typing and then
+     closing the window loses the text, and because the project never became "unsaved", closing asks nothing.
+  2. Autosave runs only every 60 s and shows nothing, so the user cannot see whether work is saved.
+- **Fix:** apply every text field while typing (or at the latest before save/close/autosave); autosave every ~15 s;
+  a status line "Kaydedildi 11:23:05" / "Kaydedilmemiş değişiklik var"; a test that types into each field and closes.
+
 ## Fixed
 
 ### F1 — The program did not start from the menu
