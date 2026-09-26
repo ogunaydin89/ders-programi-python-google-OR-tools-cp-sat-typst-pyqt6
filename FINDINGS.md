@@ -21,7 +21,8 @@ Planned-but-unbuilt features are listed separately in PLAN.md, section 14.
   has never been saved.
 
 ### F4 — Work entered after a save was lost ("it does not auto save")
-- **Seen:** 2026-09-26: the project file was last written at the manual save (11:15); later entries were missing.
+- **Seen:** 2026-09-26: after closing and restarting, the work seemed gone. It was mainly F5 (the program starts with
+  an empty project instead of reopening the file); the weak spots below are real nonetheless.
 - **Checked:** the autosave timer itself works (reproduced on a copy of the file: an edit was written on the next tick).
 - **Weak spots that explain it:**
   1. Text fields (names, short forms, school name, …) are applied only on Enter or leaving the field. Typing and then
@@ -29,6 +30,12 @@ Planned-but-unbuilt features are listed separately in PLAN.md, section 14.
   2. Autosave runs only every 60 s and shows nothing, so the user cannot see whether work is saved.
 - **Fix:** apply every text field while typing (or at the latest before save/close/autosave); autosave every ~15 s;
   a status line "Kaydedildi 11:23:05" / "Kaydedilmemiş değişiklik var"; a test that types into each field and closes.
+
+### F5 — The last project is not reopened on start
+- **Seen:** 2026-09-26: after closing and restarting, the program showed an empty project; the user expected their work.
+- **Cause:** the program never remembers the open file; it starts empty unless a file is given on the command line.
+- **Fix:** remember the last project and reopen it on start (with a clear message if it was moved or deleted); a
+  "Son açılanlar" (recent files) list in the Dosya menu; the file name always visible in the title bar.
 
 ## Fixed
 
