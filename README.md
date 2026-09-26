@@ -38,6 +38,7 @@ Windows:
 
 ```bat
 .venv\Scripts\pip install -r requirements-dev.txt
+.venv\Scripts\pip install -e .
 .venv\Scripts\python -m pytest
 ```
 
@@ -45,6 +46,7 @@ Linux / macOS:
 
 ```bash
 .venv/bin/pip install -r requirements-dev.txt
+.venv/bin/pip install -e .
 .venv/bin/python -m pytest
 ```
 
@@ -74,7 +76,7 @@ libraries, solves the benchmark school, verifies the result and writes the PDFs.
 
 **Windows note:** use `git clone` as shown. A ZIP downloaded from the website carries Windows' "downloaded from the internet" mark, and SmartScreen may then block its scripts; if you do use the ZIP, right-click it → Properties → *Unblock* before extracting.
 
-**Gentoo / distributions that package PyQt6:** create the environment with `python -m venv --system-site-packages .venv` and install everything except PyQt6 with pip, so the system's PyQt6 is used.
+**Gentoo / distributions that package PyQt6:** create the environment with `python -m venv --system-site-packages .venv` and install everything except PyQt6 with pip, so the system's PyQt6 is used; then run `pip install --no-deps -e .`.
 
 ## Privacy
 

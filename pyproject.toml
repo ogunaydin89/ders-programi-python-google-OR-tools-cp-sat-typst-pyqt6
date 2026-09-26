@@ -1,9 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "dersprogrami"
 version = "0.1.0"
 description = "Ders Programı: school timetabler for Turkish middle and high schools (OR-Tools CP-SAT, Typst, PyQt6)"
 requires-python = ">=3.10"
 license = "GPL-3.0-or-later"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dersprogrami = ["pdf/templates/*.typ"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src", "tests"]

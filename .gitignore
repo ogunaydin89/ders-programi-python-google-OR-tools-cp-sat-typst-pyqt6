@@ -10,3 +10,7 @@ out/
 !sources/*.pdf
 *_yedekler/
 *.log
+
+# Build metadata from "pip install -e ."
+*.egg-info/
+build/

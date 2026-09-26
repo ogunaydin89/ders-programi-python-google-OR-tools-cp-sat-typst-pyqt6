@@ -39,6 +39,17 @@ def main():
         from PyQt6.QtCore import QT_VERSION_STR
         return f"OR-Tools {ortools.__version__}, Qt {QT_VERSION_STR}"
 
+    def installed():
+        # The way the application is really started: no path tricks, from another folder.
+        import os
+        import subprocess
+        env = {k: v for k, v in os.environ.items() if k != "PYTHONPATH"}
+        out = subprocess.run([sys.executable, "-c", "import dersprogrami.ui.app; print('ok')"],
+                             cwd=tempfile.gettempdir(), env=env, capture_output=True, text=True)
+        if out.stdout.strip() != "ok":
+            raise RuntimeError("paket kurulu değil; proje klasöründe 'pip install -e .' çalıştırın. " + out.stderr[-300:])
+        return "python -m dersprogrami ile başlatılabilir"
+
     def solve():
         from dersprogrami.runner import SolverProcess
         from helpers import load_benchmark
@@ -80,7 +91,7 @@ def main():
         w.close()
         return "pencere açılıp kapandı"
 
-    for name, fn in (("Kütüphaneler", libs), ("Çözüm (ayrı süreçte)", solve), ("Bağımsız denetim", verify),
+    for name, fn in (("Kütüphaneler", libs), ("Program kurulumu", installed), ("Çözüm (ayrı süreçte)", solve), ("Bağımsız denetim", verify),
                      ("PDF çıktıları", pdfs), ("Program penceresi", gui)):
         ok = step(name, fn) and ok
         if not ok and name.startswith("Çözüm"):
