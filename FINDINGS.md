@@ -12,6 +12,14 @@ Planned-but-unbuilt features are listed separately in PLAN.md, section 14.
 - **Fix:** one Turkish sort key (alphabet A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z, case-insensitive)
   used by all lists; a test with the Turkish letters.
 
+### F3 — No visible "Yedek al" (backup) command
+- **Seen:** 2026-09-26, the user looked for a backup button and found none.
+- **Current behaviour:** backups are automatic but invisible: each save copies the previous version into
+  `<project>_yedekler/` (last 10 kept); until the first save, work lives only in the recovery file.
+- **Fix:** a "Yedek al…" item in the Dosya menu that saves a dated copy anywhere the user chooses (e.g. a USB stick);
+  a "Yedekleri göster" item that opens the backup folder; and a reminder in the title bar/status line while the project
+  has never been saved.
+
 ## Fixed
 
 ### F1 — The program did not start from the menu
