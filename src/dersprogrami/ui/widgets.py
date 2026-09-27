@@ -9,6 +9,12 @@ CLOSED = QColor("#e57373")
 OPEN = QColor("#ffffff")
 
 
+def track(state, *fields):
+    """Typing in these fields immediately counts as an unsaved change."""
+    for f in fields:
+        f.textEdited.connect(lambda *_: state.mark_pending())
+
+
 def info(parent, text, title="Bilgi"):
     QMessageBox.information(parent, title, text)
 

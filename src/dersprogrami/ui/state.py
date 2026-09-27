@@ -10,7 +10,8 @@ HISTORY = 200
 
 
 class ProjectState(QObject):
-    changed = pyqtSignal()
+    changed = pyqtSignal()           # the project changed: pages reload their fields
+    status_changed = pyqtSignal()    # only the saved/unsaved state changed: title and status line
 
     def __init__(self, project: Project | None = None, path=None):
         super().__init__()
@@ -19,6 +20,16 @@ class ProjectState(QObject):
         self._undo: list[tuple[Project, str]] = []
         self._redo: list[tuple[Project, str]] = []
         self.dirty = False
+        self.pending = False      # text typed into a field but not applied yet
+
+    def mark_pending(self):
+        # Must not emit `changed`: pages would reload their fields and wipe the text being typed.
+        if not self.pending:
+            self.pending = True
+            self.status_changed.emit()
+
+    def has_unsaved(self) -> bool:
+        return self.dirty or self.pending
 
     def apply(self, new: Project, label: str = ""):
         if new == self.project:
@@ -56,7 +67,7 @@ class ProjectState(QObject):
         self.project, self.path = Project(), None
         self._undo.clear()
         self._redo.clear()
-        self.dirty = False
+        self.dirty = self.pending = False
         self.changed.emit()
 
     def load(self, path):
@@ -64,7 +75,7 @@ class ProjectState(QObject):
         self.path = Path(path)
         self._undo.clear()
         self._redo.clear()
-        self.dirty = False
+        self.dirty = self.pending = False
         self.changed.emit()
 
     def save(self, path=None):
@@ -72,4 +83,4 @@ class ProjectState(QObject):
         save_project(self.project, path)
         self.path = path
         self.dirty = False
-        self.changed.emit()
+        self.status_changed.emit()

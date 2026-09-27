@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import (QFormLayout, QHBoxLayout, QLabel, QLineEdit, QListW
 
 from ..model import Teacher, new_id
 from ..shortform import duplicates, normalise, teacher_short
-from .widgets import AvailabilityGrid, ask, heading, warn
+from .widgets import AvailabilityGrid, ask, heading, track, warn
 
 
 class TeachersPage(QWidget):
@@ -17,7 +17,7 @@ class TeachersPage(QWidget):
         left = QVBoxLayout()
         left.addWidget(heading("Öğretmenler"))
         self.list = QListWidget()
-        self.list.currentRowChanged.connect(self.show_teacher)
+        self.list.currentItemChanged.connect(self._switch)
         left.addWidget(self.list)
         row = QHBoxLayout()
         add, rem = QPushButton("Öğretmen ekle"), QPushButton("Sil")
@@ -49,8 +49,18 @@ class TeachersPage(QWidget):
         self.name.editingFinished.connect(self.commit)
         self.short.editingFinished.connect(self.commit)
         self.branch.editingFinished.connect(self.commit)
+        track(state, self.name, self.short, self.branch)
+        self._shown = None                  # id of the teacher whose data is in the fields
         state.changed.connect(self.refresh)
         self.refresh()
+
+    def _switch(self, current, previous):
+        if previous is not None and self.state.pending:
+            self.commit(teacher_id=previous.data(256))
+        self.show_teacher()
+
+    def flush(self, quiet=False) -> bool:
+        return self.commit(quiet=quiet)
 
     def current(self):
         item = self.list.currentItem()
@@ -79,7 +89,9 @@ class TeachersPage(QWidget):
             w.setEnabled(t is not None)
         self.grid.setEnabled(t is not None)
         if not t:
+            self._shown = None
             return
+        self._shown = t.id
         self.name.setText(t.name)
         self.short.setText(t.short)
         self.branch.setText(t.branch)
@@ -90,21 +102,24 @@ class TeachersPage(QWidget):
         p = self.state.project
         self.state.apply(replace(p, teachers=tuple(new if x.id == new.id else x for x in p.teachers)), label)
 
-    def commit(self):
-        t = self.current()
+    def commit(self, quiet=False, teacher_id=None) -> bool:
+        t = self.state.project.teacher(teacher_id or self._shown)
         if not t:
-            return
+            return True
         name = self.name.text().strip() or t.name
         short = self.short.text().strip() or teacher_short(name)
         if name != t.name and t.short.startswith("Ö.") and normalise(short) == normalise(t.short):
             short = teacher_short(name)            # still the placeholder: suggest N.SUR from the new name
         others = [(x.id, x.short) for x in self.state.project.teachers if x.id != t.id]
         if duplicates(others + [(t.id, short)]):
+            if quiet:                        # keep the typed text; the user finishes the field later
+                return False
             warn(self, f"'{short}' kısaltması başka bir öğretmende kullanılıyor. Farklı bir kısaltma girin.")
             self.short.setText(t.short)
-            return
+            return False
         self._replace(replace(t, name=name, short=normalise(short), branch=self.branch.text().strip()),
                       "Öğretmen bilgisi")
+        return True
 
     def set_closed(self, closed):
         t = self.current()

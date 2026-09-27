@@ -20,6 +20,16 @@ Planned-but-unbuilt features are listed separately in PLAN.md, section 14.
   a "Yedekleri göster" item that opens the backup folder; and a reminder in the title bar/status line while the project
   has never been saved.
 
+## Fixed
+
+### F5 — The last project is not reopened on start
+- **Seen:** 2026-09-26: after closing and restarting, the program showed an empty project; the user expected their work.
+- **Cause:** the program never remembers the open file; it starts empty unless a file is given on the command line.
+- **Fix:** remember the last project and reopen it on start (with a clear message if it was moved or deleted); a
+  "Son açılanlar" (recent files) list in the Dosya menu; the file name always visible in the title bar.
+- **Fixed:** the last project reopens on start (a moved or deleted file is reported in the status line, no crash);
+  Dosya → "Son açılanlar" lists the last 8 projects. Tests: `tests/test_ui_persistence.py`.
+
 ### F4 — Work entered after a save was lost ("it does not auto save")
 - **Seen:** 2026-09-26: after closing and restarting, the work seemed gone. It was mainly F5 (the program starts with
   an empty project instead of reopening the file); the weak spots below are real nonetheless.
@@ -30,14 +40,12 @@ Planned-but-unbuilt features are listed separately in PLAN.md, section 14.
   2. Autosave runs only every 60 s and shows nothing, so the user cannot see whether work is saved.
 - **Fix:** apply every text field while typing (or at the latest before save/close/autosave); autosave every ~15 s;
   a status line "Kaydedildi 11:23:05" / "Kaydedilmemiş değişiklik var"; a test that types into each field and closes.
-
-### F5 — The last project is not reopened on start
-- **Seen:** 2026-09-26: after closing and restarting, the program showed an empty project; the user expected their work.
-- **Cause:** the program never remembers the open file; it starts empty unless a file is given on the command line.
-- **Fix:** remember the last project and reopen it on start (with a clear message if it was moved or deleted); a
-  "Son açılanlar" (recent files) list in the Dosya menu; the file name always visible in the title bar.
-
-## Fixed
+- **Fixed:** typing in any field counts as unsaved immediately and is applied before every save, autosave, open,
+  new and close, and when switching to another teacher or lesson; autosave every 15 s (quiet: an invalid value being
+  typed is kept, never dropped, and the user is told at save/close); a status line shows "Kaydedildi HH:MM:SS",
+  "Kaydedilmemiş değişiklik var" or "Proje henüz bir dosyaya kaydedilmedi". Found while fixing: re-reading unchanged
+  fields invented changes, so closing asked to save for nothing; fields are now applied only when something was typed.
+  Tests: `tests/test_ui_persistence.py`.
 
 ### F1 — The program did not start from the menu
 - **Seen:** 2026-09-26, first start from the KDE menu: "No module named dersprogrami".

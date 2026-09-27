@@ -25,7 +25,10 @@ def app():
 @pytest.fixture()
 def win(app, monkeypatch, tmp_path):
     monkeypatch.setattr("dersprogrami.ui.app.recovery_file", lambda: tmp_path / "kurtarma.json")
-    w = MainWindow()
+    from PyQt6.QtCore import QSettings
+    monkeypatch.setattr("dersprogrami.ui.app.settings",
+                        lambda: QSettings(str(tmp_path / "settings.ini"), QSettings.Format.IniFormat))
+    w = MainWindow(restore=False)
     yield w
     w.state.dirty = False
     w.close()

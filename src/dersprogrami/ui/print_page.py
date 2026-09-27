@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import (QFileDialog, QFormLayout, QHBoxLayout, QLabel, QLin
                              QWidget)
 
 from ..pdf import OUTPUTS, PrintRefused, export_all
-from .widgets import heading, warn
+from .widgets import heading, track, warn
 
 DESCRIPTIONS = {
     "carsaf": "Çarşaf: bütün öğretmenlerin haftalık programı (A4 yatay)",
@@ -30,6 +30,7 @@ class PrintPage(QWidget):
         self.valid_from = QLineEdit()
         self.valid_from.setPlaceholderText("ör. 29.09.2026")
         self.valid_from.editingFinished.connect(self.commit)
+        track(state, self.valid_from)
         form.addRow("Geçerlilik tarihi", self.valid_from)
         row = QHBoxLayout()
         self.folder = QLineEdit()
@@ -53,6 +54,10 @@ class PrintPage(QWidget):
         self.valid_from.setText(self.state.project.valid_from)
         if not self.folder.text() and self.state.path:
             self.folder.setText(str(Path(self.state.path).parent / "ders_programi_pdf"))
+
+    def flush(self, quiet=False) -> bool:
+        self.commit()
+        return True
 
     def commit(self):
         p = self.state.project

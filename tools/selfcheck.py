@@ -86,7 +86,7 @@ def main():
         from PyQt6.QtWidgets import QApplication
         from dersprogrami.ui.app import MainWindow
         app = QApplication.instance() or QApplication([])
-        w = MainWindow()
+        w = MainWindow(restore=False)       # do not touch the user's last project or recovery file
         w.state.dirty = False
         w.close()
         return "pencere açılıp kapandı"

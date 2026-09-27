@@ -7,7 +7,7 @@ from PyQt6.QtWidgets import (QComboBox, QFormLayout, QGroupBox, QHBoxLayout, QLi
 
 from .. import curriculum as cm
 from ..model import Bell, SchoolPart
-from .widgets import heading, warn
+from .widgets import heading, track, warn
 
 
 def needed_periods(part) -> int:
@@ -70,6 +70,7 @@ class SchoolPage(QWidget):
 
         for w in (self.name, self.headmaster, self.vices):
             w.editingFinished.connect(self.commit)
+        track(state, self.name, self.headmaster, self.vices)
         for w in (self.days, self.periods, self.lunch):
             w.valueChanged.connect(self.commit)
         self.bell.itemChanged.connect(self.commit)
@@ -112,6 +113,10 @@ class SchoolPage(QWidget):
             self.bell.setItem(q, 1, QTableWidgetItem(end))
         self.bell.blockSignals(False)
         self._loading = False
+
+    def flush(self, quiet=False) -> bool:
+        self.commit()
+        return True
 
     def commit(self, *_):
         if self._loading:

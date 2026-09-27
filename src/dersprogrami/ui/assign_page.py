@@ -7,7 +7,7 @@ from PyQt6.QtWidgets import (QComboBox, QFormLayout, QHBoxLayout, QHeaderView, Q
 
 from ..shortform import normalise
 from .classes_page import parse_format
-from .widgets import heading, warn
+from .widgets import heading, track, warn
 
 
 class AssignPage(QWidget):
@@ -26,7 +26,7 @@ class AssignPage(QWidget):
         left.addLayout(top)
         self.matrix = QTableWidget()
         self.matrix.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
-        self.matrix.currentCellChanged.connect(self.show_detail)
+        self.matrix.currentCellChanged.connect(self._switch)
         left.addWidget(self.matrix)
         lay.addLayout(left, 4)
 
@@ -57,6 +57,8 @@ class AssignPage(QWidget):
         lay.addLayout(right, 2)
         for w in (self.fmt, self.alts, self.group, self.forbid, self.prefer):
             w.editingFinished.connect(self.commit_detail)
+        track(state, self.fmt, self.alts, self.group, self.forbid, self.prefer)
+        self._shown = None                  # id of the lesson whose settings are in the fields
         self.rows, self.cols = [], []
         self.cell_lesson = {}
         state.changed.connect(self.refresh)
@@ -126,6 +128,14 @@ class AssignPage(QWidget):
             classes = tuple(replace(c, rehber=teacher_id) if c.id == l.class_id else c for c in p.classes)
         self.state.apply(replace(p, lessons=lessons, classes=classes), "Öğretmen ata")
 
+    def _switch(self, row, col, prev_row, prev_col):
+        if self.state.pending and self._shown:
+            self.commit_detail(lesson_id=self._shown)
+        self.show_detail()
+
+    def flush(self, quiet=False) -> bool:
+        return self.commit_detail(quiet=quiet)
+
     def current_lesson(self):
         lid = self.cell_lesson.get((self.matrix.currentRow(), self.matrix.currentColumn()))
         return self.state.project.lesson(lid) if lid else None
@@ -135,8 +145,10 @@ class AssignPage(QWidget):
         for w in (self.fmt, self.alts, self.group, self.forbid, self.prefer):
             w.setEnabled(l is not None)
         if not l:
+            self._shown = None
             self.detail.setText("Bir hücre seçin.")
             return
+        self._shown = l.id
         c = self.state.project.school_class(l.class_id)
         self.detail.setText(f"{c.label} — {l.name} ({l.hours} saat)")
         self.fmt.setText("+".join(map(str, l.format)))
@@ -145,29 +157,34 @@ class AssignPage(QWidget):
         self.forbid.setText(",".join(map(str, sorted(l.forbidden_periods))))
         self.prefer.setText(",".join(map(str, sorted(l.preferred_periods))))
 
-    def commit_detail(self):
-        l = self.current_lesson()
+    def commit_detail(self, quiet=False, lesson_id=None) -> bool:
+        l = self.state.project.lesson(lesson_id or self._shown)
         if not l:
-            return
+            return True
+
+        def bad(msg):
+            if not quiet:
+                warn(self, msg)
+                self.show_detail()
+            return False
+
         fmt = parse_format(self.fmt.text())
         if not fmt or sum(fmt) != l.hours:
-            warn(self, f"Biçim, toplamı {l.hours} olan sayılardan oluşmalı (ör. 2+2+1).")
-            return self.show_detail()
+            return bad(f"Biçim, toplamı {l.hours} olan sayılardan oluşmalı (ör. 2+2+1).")
         alts = []
         for part in filter(None, (x.strip() for x in self.alts.text().split(","))):
             a = parse_format(part)
             if not a or sum(a) != l.hours:
-                warn(self, f"Alternatif biçim '{part}' geçersiz: toplamı {l.hours} olmalı.")
-                return self.show_detail()
+                return bad(f"Alternatif biçim '{part}' geçersiz: toplamı {l.hours} olmalı.")
             alts.append(tuple(sorted(a, reverse=True)))
         try:
             forbid = frozenset(int(x) for x in self.forbid.text().split(",") if x.strip())
             prefer = frozenset(int(x) for x in self.prefer.text().split(",") if x.strip())
         except ValueError:
-            warn(self, "Ders saatlerini virgülle ayrılmış sayılar olarak girin (ör. 1,7).")
-            return self.show_detail()
+            return bad("Ders saatlerini virgülle ayrılmış sayılar olarak girin (ör. 1,7).")
         new = replace(l, format=tuple(sorted(fmt, reverse=True)), alternatives=tuple(alts),
                       lesson_group=self.group.text().strip() or None, forbidden_periods=forbid,
                       preferred_periods=prefer)
         p = self.state.project
         self.state.apply(replace(p, lessons=tuple(new if x.id == l.id else x for x in p.lessons)), "Ders ayarı")
+        return True
