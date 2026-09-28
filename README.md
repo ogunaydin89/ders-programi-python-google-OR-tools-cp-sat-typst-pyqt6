@@ -84,4 +84,4 @@ Project files contain teachers' real names. Keep them outside this folder; they 
 
 ## Licence
 
-GPL-3.0-or-later (required by PyQt6). See [LICENSE](LICENSE). The official curriculum charts in `sources/` are public documents of the Turkish Ministry of National Education (MEB).
+MIT © Ogün Aydın ([ogunaydin89](https://github.com/ogunaydin89)). See [LICENSE](LICENSE). This project uses **PyQt6**, which is licensed under GPL-3.0 and is installed separately with pip (it is never included in this repository). The code here is MIT; a packaged build that bundles PyQt6 (e.g. an .exe or AppImage) must be distributed under GPL-3.0. The official curriculum charts in `sources/` are public documents of the Turkish Ministry of National Education (MEB).

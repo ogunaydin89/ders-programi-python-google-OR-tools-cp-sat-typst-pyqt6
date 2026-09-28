@@ -7,7 +7,7 @@ name = "dersprogrami"
 version = "0.1.0"
 description = "Ders Programı: school timetabler for Turkish middle and high schools (OR-Tools CP-SAT, Typst, PyQt6)"
 requires-python = ">=3.10"
-license = "GPL-3.0-or-later"
+license = "MIT"
 
 [tool.setuptools.packages.find]
 where = ["src"]

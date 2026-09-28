@@ -439,7 +439,7 @@ No plan guarantees bug-free software; these rules make sure bugs cannot lose dat
 - Installing OR-Tools and Typst on the Gentoo machine: prebuilt pip packages vs building from source (decide at M2; show exact commands first). Checked: OR-Tools 9.15, Typst 0.15 and PyQt6 6.11 all publish packages for Python 3.14 on Windows, Linux and macOS.
 - README note for Windows: a ZIP downloaded from GitHub carries the "downloaded from the internet" mark and SmartScreen may block its scripts; use `git clone`, or Properties → Unblock before extracting.
 - Class timetable printout of the benchmark school, for cross-checking the transcription.
-- Licence note: PyQt6 is GPL, so a shared app must be GPL; PySide6 (LGPL) has a near-identical API if that ever matters.
+- Licence note: PyQt6 is GPL. Decision 28.09.2026: the repository code is MIT (GPL-compatible) and PyQt6 is installed separately with pip, never committed; a packaged build that bundles PyQt6 must follow GPL-3.0. PySide6 (LGPL) has a near-identical API if that ever matters.
 
 ## 14. Build notes and known gaps
 
