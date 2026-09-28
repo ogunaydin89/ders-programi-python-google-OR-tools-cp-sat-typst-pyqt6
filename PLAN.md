@@ -17,7 +17,7 @@ Status: **M0–M7 built** (see section 14 for build notes and known gaps). Every
 | Language | Python. App UI in **Turkish only** (no language toggle). |
 | Paper | Every printout A4, except teacher handouts: an A5 timetable printed twice on one A4 sheet (upper half and an identical lower half, with a cut line). |
 | Teacher load | No daily-hour cap by default. Keep each teacher's lessons as close together as possible (few gaps) while spreading their load evenly across their working days. |
-| Hosting | Local folder only (`~/Code/ders-programi-python-google-OR-tools-cp-sat-typst-pyqt6`). Pushed to Codeberg only when mature. |
+| Hosting | Local folder only (`~/Code/ders-programi-python-google-OR-tools-cp-sat-typst-pyqt6`). Published on GitHub (github.com/ogunaydin89) once mature. |
 | Platforms | **Windows 11 is the real target** (school computers). Developed on Gentoo, but tested on Windows 11 from M2 onward. **Delivered as source code only** (no .exe installer: Defender, SmartScreen and Core Isolation block unsigned installers); the README gives exact install and run steps. Linux and macOS keep working. |
 | Short forms | **Mandatory for every lesson and teacher**, entered when the lesson or teacher is added. Auto-suggested, freely editable (any form the user prefers), must be unique (section 3). |
 | Manual edits | A manual placement that breaks a structural or Mandatory rule is **refused**, with the reason shown. |
@@ -380,7 +380,7 @@ Performance note: on large schools, testing thousands of switches one at a time 
 
 ## 9. Benchmark and tests
 
-- **Benchmark:** the user's school's current Progmatic timetable (ortaokul, 8 sections 5A–8B, 17 teachers with lessons, 5 days × 7 periods, 280 lesson hours). **Source: the live school pano** (`CLASS_TIMETABLES` in `js/data.js` of the deployed Firebase site, which carries the Progmatic result cell by cell; the Codeberg copy of the pano is an older backup and must not be used). Extracted by script into an **anonymised** project file (teachers T01–T17; no real names in the repo). Progmatic's own placement is kept alongside for comparison (e.g. how often it puts blocks of one lesson on neighbouring days). Success = the solver places all 280 hours with the same assignments and formats, satisfying every enabled rule. Progmatic cannot export its data, so the teachers' closed days/hours (e.g. teachers shared with other schools, requested days off) must be listed by the user; without them the benchmark is easier than the real problem.
+- **Benchmark:** the user's school's current Progmatic timetable (ortaokul, 8 sections 5A–8B, 17 teachers with lessons, 5 days × 7 periods, 280 lesson hours). **Source: the live school pano** (`CLASS_TIMETABLES` in `js/data.js` of the deployed Firebase site, which carries the Progmatic result cell by cell; the git backup of the pano may lag behind and must not be used). Extracted by script into an **anonymised** project file (teachers T01–T17; no real names in the repo). Progmatic's own placement is kept alongside for comparison (e.g. how often it puts blocks of one lesson on neighbouring days). Success = the solver places all 280 hours with the same assignments and formats, satisfying every enabled rule. Progmatic cannot export its data, so the teachers' closed days/hours (e.g. teachers shared with other schools, requested days off) must be listed by the user; without them the benchmark is easier than the real problem.
 - A synthetic high-school instance (Anadolu Lisesi, 40 hours) to test 8-period days and the high-school choosers.
 - A synthetic **mixed school**: Anadolu İmam Hatip Lisesi 9–12 (8-8-8-8-8) with integrated İmam Hatip Ortaokulu 5–8 (7-7-8-7-7), teachers shared across both, some teaching both 5th and 12th grades.
 - A deliberately broken copy of the benchmark tests the explanations (e.g. over-closed teacher, impossible format).
@@ -422,7 +422,7 @@ Virtualenvs, caches and generated PDFs stay out of version control.
 4. ✔ **M4 Explanations:** pre-checks, minimal conflict sets, quality report, solve controls.
 5. ✔ **M5 PDFs:** master (çarşaf), teacher, class and A5 handout templates.
 6. ✔ **M6 PyQt6 UI:** including guided manual editing, undo/redo, autosave and backups.
-7. ✔ **M7 Polish:** README with exact install and run steps for Windows 11 (primary), Linux and macOS; then consider Codeberg.
+7. ✔ **M7 Polish:** README with exact install and run steps for Windows 11 (primary), Linux and macOS; then consider publishing on GitHub.
 
 ## 12. Reliability
 
@@ -437,7 +437,7 @@ No plan guarantees bug-free software; these rules make sure bugs cannot lose dat
 ## 13. Open questions
 
 - Installing OR-Tools and Typst on the Gentoo machine: prebuilt pip packages vs building from source (decide at M2; show exact commands first). Checked: OR-Tools 9.15, Typst 0.15 and PyQt6 6.11 all publish packages for Python 3.14 on Windows, Linux and macOS.
-- README note for Windows: a ZIP downloaded from Codeberg carries the "downloaded from the internet" mark and SmartScreen may block its scripts; use `git clone`, or Properties → Unblock before extracting.
+- README note for Windows: a ZIP downloaded from GitHub carries the "downloaded from the internet" mark and SmartScreen may block its scripts; use `git clone`, or Properties → Unblock before extracting.
 - Class timetable printout of the benchmark school, for cross-checking the transcription.
 - Licence note: PyQt6 is GPL, so a shared app must be GPL; PySide6 (LGPL) has a near-identical API if that ever matters.
 

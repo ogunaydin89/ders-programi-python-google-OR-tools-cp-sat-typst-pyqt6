@@ -29,7 +29,7 @@ Work in progress. Milestones (see PLAN.md, section 11):
 Requirements: **Python 3.10 or newer** (tested with 3.14) and **git**.
 
 ```bash
-git clone https://codeberg.org/helinesca/ders-programi-python-google-OR-tools-cp-sat-typst-pyqt6.git
+git clone https://github.com/ogunaydin89/ders-programi-python-google-OR-tools-cp-sat-typst-pyqt6.git
 cd ders-programi-python-google-OR-tools-cp-sat-typst-pyqt6
 python -m venv .venv
 ```
